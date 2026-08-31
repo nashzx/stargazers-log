@@ -46,6 +46,10 @@ body {
   margin-top: 0.25rem;
 }
 
+.repo-meta > span {
+  margin-left: 0.75rem;
+}
+
 .repo-desc {
   margin-top: 0.5rem;
   color: #334155;
@@ -55,8 +59,39 @@ body {
   color: #94a3b8;
 }
 
+.repo-title:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 2px;
+}
+
 @media (min-width: 640px) {
   .repo-item { flex-direction: row; align-items: center; justify-content: space-between; }
   .repo-main { flex: 1; }
   .repo-meta { margin-left: 1rem; text-align: right; }
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+.controls input[type="text"], .controls input[type="password"] {
+  padding: 0.25rem 0.4rem;
+  border: 1px solid #e6e9ee;
+  border-radius: 4px;
+}
+.controls button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.controls button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
