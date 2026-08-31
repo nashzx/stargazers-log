@@ -3,9 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Stargazers log</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Stargazers log</h1>
     <p>A log of the repositories I've starred.</p>
+    <div class="controls" aria-hidden="false">
+      <label>
+        <input type="checkbox" id="use-github-api"> Use GitHub API
+      </label>
+      <label>
+        Username:
+        <input id="github-username" type="text" placeholder="github username" aria-label="GitHub username">
+      </label>
+      <label>
+        Token (optional):
+        <input id="github-token" type="password" placeholder="personal access token" aria-label="GitHub token">
+      </label>
+      <button id="fetch-button">Fetch</button>
+      <button id="retry-button" style="display:none">Retry</button>
+      <span id="network-status" class="muted" aria-live="polite" style="margin-left:0.5rem"></span>
+    </div>
+
+    <main id="starred-list" role="region" aria-label="Starred repositories" aria-live="polite" aria-busy="true">Loading starred repositories...</main>
+    <script src="script.js"></script>
   </body>
 </html>
