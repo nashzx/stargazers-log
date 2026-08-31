@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "owner": "octocat",
+    "repo": "Hello-World",
+    "description": "My first repository",
+    "html_url": "https://github.com/octocat/Hello-World",
+    "language": "JavaScript",
+    "stargazers_count": 1500,
+    "starred_at": "2026-08-01T12:34:56Z"
+  },
+  {
+    "id": 2,
+    "owner": "nodejs",
+    "repo": "node",
+    "description": "Node.js JavaScript runtime",
+    "html_url": "https://github.com/nodejs/node",
+    "language": "C++",
+    "stargazers_count": 92000,
+    "starred_at": "2026-07-15T08:20:00Z"
+  },
+  {
+    "id": 3,
+    "owner": "django",
+    "repo": "django",
+    "description": "The Web framework for perfectionists",
+    "html_url": "https://github.com/django/django",
+    "language": "Python",
+    "stargazers_count": 65000,
+    "starred_at": "2026-06-05T19:10:22Z"
+  }
+]
